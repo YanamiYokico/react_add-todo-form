@@ -58,7 +58,7 @@ export const App = () => {
 
     const user = usersFromServer.find(u => u.id === userId);
     const newTodo: Todo & { user: User } = {
-      id: getMaxId(todosFromServer) + 1,
+      id: getMaxId(todos) + 1,
       title: title.trim(),
       completed: false,
       userId,
